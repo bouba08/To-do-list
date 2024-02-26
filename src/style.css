@@ -12,7 +12,7 @@ body{
 }
 
 .todo-span{
-    padding: 0 10px;
+    padding: 0px 10px;
     font-size: 24px;
     font-weight: 700;
     color: hsla(0, 100%, 50%, 0.956);
@@ -20,18 +20,29 @@ body{
     padding-bottom: 8px;    
 }
 
-.todo-undo{
-    /* background-color: white; */
-    padding: 0 10px;
-    border: none;
+.todo-list{
+    padding: 10px 0;
 }
 
-.todo-remove{
-    /* background-color: white; */
-    padding: 0 12px;
-    border: none;
+.todo-input{
+    font-size: 24px;
+    padding: 8px 5px;
+    margin: 0 5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-radius: 4px;
 }
 
+/* .todo-undo{
+    /* background-color: white; */
+    /* padding: 0 10px;
+    border: none;
+/* } */
+
+/* .todo-remove{
+    /* background-color: white; */
+    /* padding: 0 12px;
+    border: none;
+/* } */ 
 
 
 

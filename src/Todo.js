@@ -40,12 +40,12 @@ let Todo = () => {
       <h1 className="todo-title">Todo List</h1>
       <input className="todo-input" type="text" value={inputValue} onChange={handleInputChange} />
       <button className="todo-add" onClick={addTodo}>Add</button>
-      <ul className="todo-list">
+      <ul>
       {todos.map(todo => (
-          <li key={todo.id}>
+          <li className="todo-list" key={todo.id}>
             <span className="todo-span">{todo.text}</span>
             <button className="todo-remove" onClick={() => removeTodo(todo.id)}>Remove</button>
-            <button className="todo-undo" onClick={() => toggleTodo(todo.id)}>{todo.completed ? 'Undo' : 'Complete'}</button>
+            <button className="todo-undo" onClick={() => toggleTodo(todo.id)}>{todo.completed ? 'Completed' : 'Complete'}</button>
           </li>
         ))}
 
