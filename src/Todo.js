@@ -1,4 +1,6 @@
 import { useState } from "react";
+import '../src/style.css'
+
 
 let Todo = () => {
   const [todos, setTodos] = useState([]);
@@ -35,25 +37,18 @@ let Todo = () => {
 
   return (
     <div>
-      <h1>Todo List</h1>
-      <input type="text" value={inputValue} onChange={handleInputChange} />
-      <button onClick={addTodo}>Add</button>
-      <ul>
-        {todos.map((todo) => (
+      <h1 className="todo-title">Todo List</h1>
+      <input className="todo-input" type="text" value={inputValue} onChange={handleInputChange} />
+      <button className="todo-add" onClick={addTodo}>Add</button>
+      <ul className="todo-list">
+      {todos.map(todo => (
           <li key={todo.id}>
-            <span
-              style={{
-                textDecoration: todo.completed ? "line-through" : "none",
-              }}
-            >
-              {todo.text}
-            </span>
-            <button onClick={() => removeTodo(todo.id)}>Remove</button>
-            <button onClick={() => toggleTodo(todo.id)}>
-              {todo.completed ? "Undo" : "Complete"}
-            </button>
+            <span className="todo-span">{todo.text}</span>
+            <button className="todo-remove" onClick={() => removeTodo(todo.id)}>Remove</button>
+            <button className="todo-undo" onClick={() => toggleTodo(todo.id)}>{todo.completed ? 'Undo' : 'Complete'}</button>
           </li>
         ))}
+
       </ul>
     </div>
   );

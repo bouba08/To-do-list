@@ -1,0 +1,43 @@
+body{
+    background-color: aqua;
+}
+
+.todo-title{
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    text-shadow: 8px 8px black;
+    color: white;
+    font-weight: 600;
+}
+
+.todo-span{
+    padding: 0 10px;
+    font-size: 24px;
+    font-weight: 700;
+    color: hsla(0, 100%, 50%, 0.956);
+    text-transform: uppercase;
+    padding-bottom: 8px;    
+}
+
+.todo-undo{
+    /* background-color: white; */
+    padding: 0 10px;
+    border: none;
+}
+
+.todo-remove{
+    /* background-color: white; */
+    padding: 0 12px;
+    border: none;
+}
+
+.todo-list{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+
