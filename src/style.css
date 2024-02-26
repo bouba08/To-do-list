@@ -32,10 +32,7 @@ body{
     border: none;
 }
 
-.todo-list{
-    display: flex;
-    justify-content: space-between;
-}
+
 
 
 
